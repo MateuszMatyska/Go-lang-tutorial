@@ -12,3 +12,12 @@ To cread mod file for go application run
 go mod init name_of_mode
 ```
 mod contains the most important informations about application like for example go version.
+
+### Variables
+const - for constans
+var for variables with changing values
+
+### Printing strings
+
+* Println for print string with next line 
+* Printf for printing with variables(%v) inside 
