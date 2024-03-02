@@ -21,3 +21,20 @@ var for variables with changing values
 
 * Println for print string with next line 
 * Printf for printing with variables(%v) inside 
+
+### types with variables
+
+for const it is possible to use var_name := value fr example 
+```
+banner := "banner"
+```
+type of data is always after var name for example 
+```
+var index int 
+```
+
+### Input
+to use inputs remember about pointers to memory 
+```
+    fmt.Scan(&variable_name)
+```
