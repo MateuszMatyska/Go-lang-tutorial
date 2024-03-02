@@ -36,5 +36,5 @@ var index int
 ### Input
 to use inputs remember about pointers to memory 
 ```
-    fmt.Scan(&variable_name)
+fmt.Scan(&variable_name)
 ```
