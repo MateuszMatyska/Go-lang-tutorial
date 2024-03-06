@@ -38,3 +38,27 @@ to use inputs remember about pointers to memory
 ```
 fmt.Scan(&variable_name)
 ```
+
+### Arrays and Slices 
+
+#### Arrays
+Arrays has got a size. To add element to array you need to know index.
+```
+var namesArray1 = [3]string{"Tom", "Arthur", "John"}
+
+var namesArray2 [3]string
+namesArray2[0] = "Elliot"
+namesArray2[1] = "Angela"
+namesArray2[2] = "Darlene"
+```
+
+#### Slices 
+Dynamics array you don't need to know what size array will have
+```
+var namesArray3 []string
+namesArray3 = append(namesArray3, "Michael")
+namesArray3 = append(namesArray3, "Jim")
+namesArray3 = append(namesArray3, "Dwight")
+namesArray3 = append(namesArray3, "Pam")
+```
+
