@@ -13,6 +13,13 @@ go mod init name_of_mode
 ```
 mod contains the most important informations about application like for example go version.
 
+### import 
+import packages
+import (
+    "fmt"
+    "strings"
+)
+
 ### Variables
 const - for constans
 var for variables with changing values
@@ -60,5 +67,30 @@ namesArray3 = append(namesArray3, "Michael")
 namesArray3 = append(namesArray3, "Jim")
 namesArray3 = append(namesArray3, "Dwight")
 namesArray3 = append(namesArray3, "Pam")
+```
+
+### Loops
+In go is only for 
+
+_ means variable which you don't want to use.
+
+```
+for index, item := range array {
+    //action
+}
+```
+
+#### Infinite loop
+```
+for {
+    action
+}
+```
+
+#### number range loop
+```
+for i := 1; i < 5; i++ {
+	action
+}
 ```
 

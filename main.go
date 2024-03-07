@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
 func main() {
 	const conferanceName string = "Go lang Conf. 2024"
@@ -27,9 +30,31 @@ func main() {
 	fmt.Printf("Names 2: %v\n", namesArray2)
 
 	var namesArray3 []string
-	namesArray3 = append(namesArray3, "Michael")
-	namesArray3 = append(namesArray3, "Jim")
-	namesArray3 = append(namesArray3, "Dwight")
-	namesArray3 = append(namesArray3, "Pam")
+	namesArray3 = append(namesArray3, "Michael Scott")
+	namesArray3 = append(namesArray3, "Jim Halpert")
+	namesArray3 = append(namesArray3, "Dwight Schrute")
+	namesArray3 = append(namesArray3, "Pam Beesly")
 	fmt.Printf("Names 3: %v\n", namesArray3)
+
+	for index, person := range namesArray3 {
+		name := strings.Fields(person)[0]
+		number := index + 1
+		fmt.Printf("[%v]: Person Name: %v \n", number, name)
+	}
+
+	for _, person := range namesArray3 {
+		name := strings.Fields(person)[1]
+		fmt.Printf("Person Last Name: %v \n", name)
+	}
+
+	for i := 0; i < 10; i++ {
+		fmt.Println(i)
+	}
+
+	const n = "GoLang"
+
+	for index, l := range n {
+		letter := string(l)
+		fmt.Printf("[%v]{%v}: %v\n", index, l, letter)
+	}
 }
