@@ -57,4 +57,43 @@ func main() {
 		letter := string(l)
 		fmt.Printf("[%v]{%v}: %v\n", index, l, letter)
 	}
+
+	for i := 0; i < 10; i++ {
+		if i%2 == 0 {
+			fmt.Printf("%v is even number\n", i)
+		} else {
+			fmt.Printf("%v is odd number\n", i)
+		}
+	}
+
+	var people []string
+	people = append(people, "Elliot Alderson")
+	people = append(people, "Darlene Alderson")
+	people = append(people, "Angela Moss")
+	people = append(people, "Tyrell Wellick")
+	people = append(people, "Krista Gordon")
+
+	for _, name := range people {
+		personName := strings.Fields(name)[0]
+
+		if personName == "Angela" {
+			fmt.Println(personName)
+			break
+		} else {
+			fmt.Println(name)
+		}
+		fmt.Println("----")
+	}
+
+	for _, name := range people {
+		personName := strings.Fields(name)[0]
+
+		if personName == "Angela" {
+			fmt.Println(personName)
+			continue
+		} else {
+			fmt.Println(name)
+		}
+		fmt.Println("----")
+	}
 }

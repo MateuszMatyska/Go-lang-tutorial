@@ -94,3 +94,16 @@ for i := 1; i < 5; i++ {
 }
 ```
 
+### If ... else statement
+```
+if expresion {
+  action
+} else {
+  action  
+}
+```
+
+### break and continue
+
+* breake - end statement. 
+* continue - end statement and start from next iteration. 
